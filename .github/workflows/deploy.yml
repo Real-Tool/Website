@@ -23,7 +23,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-          az storage blob upload-batch --account-name rtpwesa --auth-mode key -d '$web' -s src
+          az storage blob upload-batch --overwrite --account-name rtpwesa --auth-mode key -d '$web' -s src
 
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
