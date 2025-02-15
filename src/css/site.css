@@ -1,40 +1,48 @@
 body {
-    font-family: "Inter", serif;
+	font-family: "Inter", serif;
 }
 
 .navbar {
-    background-color: #F7F7F7;
+	background-color: #F7F7F7;
 }
 
 .navbar img {
-    height: 80px;
-    max-height: inherit !important;
+	height: 80px;
+	max-height: inherit !important;
 }
 
 .has-background-dark-blue {
-    background-color: #0C255D;
+	background-color: #0C255D;
 }
 
 .has-background-green {
-    background-color: #DDE582;
+	background-color: #DDE582;
 }
 
 .has-text-red {
-    color: #EB5153;
+	color: #EB5153;
+}
+
+.has-text-dark-blue {
+	color: #0C255D;
+}
+
+.has-text-whatsapp-green{
+	color: #25D366;
 }
 
 .column.is-vcentered {
-    margin-top: auto;
-    margin-bottom: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 #screenshots {
-    background: linear-gradient(0deg, #F7F7F7 30%, white 0%);
+	background: linear-gradient(0deg, #F7F7F7 30%, white 0%);
 }
 
 #footer-img {
-    background-image: url(../img/footer.jpg);
-    height: 30vh;
-    background-size: cover;
-    background-position: center center;
+	background-image: url(../img/footer.jpg);
+	height: 30vh;
+	background-size: cover;
+	background-position: center center;
 }
