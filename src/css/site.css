@@ -2,6 +2,14 @@ body {
 	font-family: "Inter", serif;
 }
 
+h4 {
+	color: #A48A7B !important;
+}
+
+p {
+	color: #0C255D !important;
+}
+
 .navbar {
 	background-color: #F7F7F7;
 }
@@ -9,6 +17,28 @@ body {
 .navbar img {
 	height: 80px;
 	max-height: inherit !important;
+}
+
+.hero {
+	background-color: #0C255D;
+}
+
+.hero-body {
+	background-image: url(../img/header.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+@media (max-width: 1023px) {
+	.hero-body {
+		background-image: url(../img/header.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-color: rgba(12, 37, 93, 0.6);
+		background-blend-mode: darken;
+	}
 }
 
 .has-background-dark-blue {
