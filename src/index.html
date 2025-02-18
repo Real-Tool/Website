@@ -9,6 +9,7 @@
 	<meta property="og:image" content="https://www.realtool.nl/img/RealTool.png" />
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.3/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-timeline@3.0.5/dist/css/bulma-timeline.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -36,6 +37,11 @@
 					<a class="navbar-item">
 						<i class="fa-duotone fa-regular fa-fw fa-house"></i>
 						Home
+					</a>
+
+					<a class="navbar-item" href="index.html#hoe-werkt-het">
+						<i class="fa-duotone fa-regular fa-fw fa-timeline"></i>
+						Hoe werkt het?
 					</a>
 				</div>
 
@@ -113,23 +119,65 @@
 			</div>
 		</div>
 
-		<div id="screenshots" class="columns is-centered my-6">
+		<div id="hoe-werkt-het" class="columns is-centered my-6">
 			<div class="column content is-two-thirds pb-6">
-				<div class="columns">
-					<div class="column">
-						<figure class="image">
-							<img src="img/Confirmation_mockup.png" height="200px" />
-						</figure>
+				<p class="title">
+					Hoe werkt het?
+				</p>
+				<p>
+					Door een set van goed <i>ge-timede</i> berichten met hulpvolle informatie rond de bezichtiging wordt de bezichtiger op een prettige manier begeleid.
+				</p>
+				<div class="timeline is-centered">
+					<header class="timeline-header">
+						<span class="tag is-medium has-background-brown has-text-white">Afspraak</span>
+					</header>
+					<div class="timeline-item">
+						<div class="timeline-marker is-dark-blue is-icon">
+							<i class="fa-solid fa-calendar-check"></i>
+						</div>
+						<div class="timeline-content">
+						  <p class="heading">5 min. later</p>
+						  <p>Bevestiging app</p>
+						  <a href="templates.html#bevestiging"><img src="img/Confirmation_mockup.png" /></a>
+						</div>
 					</div>
-					<div class="column has-text-centered is-vcentered">
-						<i class="fa-sharp fa-solid fa-play fa-4x has-text-red"></i>
+					<div class="timeline-item">
+						<div class="timeline-marker is-dark-blue is-icon">
+							<i class="fa-solid fa-bell"></i>
+						</div>
+						<div class="timeline-content">
+						  <p class="heading">2 uur van te voren</p>
+						  <p>Reminder app</p>
+						  <a href="templates.html#herinnering"><img src="img/Reminder_mockup.png" /></a>
+						</div>
 					</div>
-					<div class="column">
-						<figure class="image">
-							<img src="img/Reminder_mockup.png" height="200px" />
-						</figure>
+					<header class="timeline-header">
+					  <span class="tag is-medium has-background-brown has-text-white">Bezichtiging</span>
+					</header>
+					<div class="timeline-item">
+						<div class="timeline-marker is-dark-blue is-icon">
+							<i class="fa-solid fa-face-smile"></i>
+						</div>
+						<div class="timeline-content">
+						  <p class="heading">2 uur later</p>
+						  <p>Bedank app</p>
+						  <a href="templates.html#opvolging"><img src="img/Confirmation_mockup.png" /></a>
+						</div>
 					</div>
-				</div>
+					<div class="timeline-item">
+						<div class="timeline-marker is-dark-blue is-icon">
+						  <i class="fa fa-flag"></i>
+						</div>
+						<div class="timeline-content">
+						  <p class="heading">1 dag later</p>
+						  <p>Opvolging app</p>
+						  <a href="templates.html#conversie"><img src="img/Confirmation_mockup.png" /></a>
+						</div>
+					</div>
+					<header class="timeline-header">
+					  <span class="tag is-small has-background-brown has-text-white">Einde</span>
+					</header>
+				  </div>
 			</div>
 		</div>
 

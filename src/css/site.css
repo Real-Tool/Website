@@ -49,6 +49,10 @@ p {
 	background-color: #DDE582;
 }
 
+.has-background-brown {
+	background-color: #A48A7B;
+}
+
 .has-text-red {
 	color: #EB5153;
 }
@@ -66,8 +70,14 @@ p {
 	margin-bottom: auto;
 }
 
-#screenshots {
-	background: linear-gradient(0deg, #F7F7F7 30%, white 0%);
+.timeline .timeline-item .timeline-marker.is-dark-blue {
+	background-color: #0C255D;
+	border-color: #0C255D;
+	color: white;
+}
+
+.timeline img {
+	max-height: 100px;
 }
 
 #footer-img {
