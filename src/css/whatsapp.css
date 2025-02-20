@@ -1,64 +1,88 @@
-.speech-wrapper{
-    padding: 30px 40px;
-    background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+.speech-wrapper {
+	padding: 30px 40px;
+	background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
 
-    .bubble{
-        width: 240px;
-        height: auto;
-        display: block;
-        background: #f5f5f5;
-        border-radius: 4px;
-        box-shadow: 1px 1px 5px #000;
-        position: relative;
-        margin: 0 0 25px;
+	.bubble{
+		width: 240px;
+		height: auto;
+		display: block;
+		background: #f5f5f5;
+		border-radius: 4px;
+		box-shadow: 1px 1px 5px #000;
+		position: relative;
+		margin: 0 0 25px;
 
-        .txt{
-            padding: 8px 55px 8px 14px;
+		.txt{
+			padding: 8px 55px 8px 14px;
 
-            .name{
-                font-weight: 600;
-                font-size: 12px;
-                margin: 0 0 4px;
-                color: #3498db;
+			.name{
+				font-weight: 600;
+				font-size: 12px;
+				margin: 0 0 4px;
+				color: #3498db !important;
 
-                span{
-                    font-weight: normal;
-                    color: #b3b3b3;
-                }
-            }
+				span{
+					font-weight: normal;
+					color: #b3b3b3;
+				}
+			}
 
-            .message{
-                font-size: 12px;
-                margin: 0;
-                color: #2b2b2b;
-            }
+			.message{
+				font-size: 12px;
+				margin: 0;
+				color: #2b2b2b !important;
+			}
 
-            .timestamp{
-                font-size: 11px;
-                position: absolute;
-                bottom: 8px;
-                right: 10px;
-                text-transform: uppercase; color: #999
-            }
-        }
+			.timestamp{
+				font-size: 11px;
+				position: absolute;
+				bottom: 8px;
+				right: 10px;
+				text-transform: uppercase;
+				color: #999 !important;
+			}
+		}
 
-        .bubble-arrow {
-            position: absolute;
-            width: 0;
-            bottom:42px;
-            left: -16px;
-            height: 0;
-        }
+		.bubble-arrow {
+			position: absolute;
+			width: 0;
+			bottom:42px;
+			left: -16px;
+			height: 0;
+		}
 
-        .bubble-arrow:after {
-            content: "";
-            position: absolute;
-            border: 0 solid transparent;
-            border-top: 9px solid #f5f5f5;
-            border-radius: 0 20px 0;
-            width: 15px;
-            height: 30px;
-            transform: rotate(145deg);
-        }
-    }
+		.bubble-arrow:after {
+			content: "";
+			position: absolute;
+			border: 0 solid transparent;
+			border-top: 9px solid #f5f5f5;
+			border-radius: 0 20px 0;
+			width: 15px;
+			height: 30px;
+			transform: rotate(145deg);
+		}
+	}
+}
+
+[data-theme=dark], .theme-dark {
+	.speech-wrapper {
+		background: url('https://camo.githubusercontent.com/ebf18cd85f7aa9dc79fb74c58dc94febf3a6441d8d689cd5a400b2707e19ec0e/68747470733a2f2f7765622e77686174736170702e636f6d2f696d672f62672d636861742d74696c652d6461726b5f61346265353132653731393562366237333364393131306234303866303735642e706e67');
+		background-color: #000;
+
+		.bubble {
+			background: #3D3C3F;
+			box-shadow: 1px 1px 5px #fff;
+
+			.txt {
+
+				.message {
+					color: #D4DDE6 !important;
+				}
+			}
+
+			.bubble-arrow:after {
+				border-top: 9px solid #3D3C3F;
+			}
+		}
+	}
 }
