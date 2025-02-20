@@ -46,6 +46,32 @@
 				</div>
 
 				<div class="navbar-end">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link is-arrowless">
+							<i id="js-cycle" class="fa-duotone fa-regular fa-sun"></i>
+						</a>
+						<div class="navbar-dropdown js-themes">
+							<button data-scheme="system" class="navbar-item">
+								<span class="icon">
+									<i class="fa-duotone fa-regular fa-sun"></i>
+								</span>
+								<span>Light</span>
+							</button>
+						  	<button data-scheme="dark" class="navbar-item">
+								<span class="icon">
+									<i class="fa-duotone fa-regular fa-moon"></i>
+								</span>
+								<span>Dark</span>
+							</button>
+						  	<button data-scheme="system" class="navbar-item">
+								<span class="icon">
+									<i class="fa-duotone fa-regular fa-desktop"></i>
+								</span>
+								<span>System</span>
+							</button>
+						</div>
+					</div>
+
 					<a class="navbar-item" href="hulp.html">
 						<i class="fa-duotone fa-regular fa-fw fa-question"></i>
 						Hulp
@@ -105,7 +131,7 @@
 					Geen handmatige opvolging meer, geen gemiste kansen - alleen een gestroomlijnd, effectief proces dat bezichtigers transformeert in nieuwe verkopers.
 					Start vandaag nog met RealTool en ontdek hoe jij m&eacute;&eacute;r uit elke bezichtiging haalt!
 				</p>
-				<div class="notification has-background-green">
+				<div class="notification has-background-green has-text-black">
 					Gemiddeld zullen <b>8%</b> van uw bezichtigers getransformeerd worden in nieuwe verkopers dankzij RealTool.
 				</div>
 				<h4 class="is-size-4 mt-6">
@@ -129,10 +155,10 @@
 				</p>
 				<div class="timeline is-centered pt-3">
 					<header class="timeline-header">
-						<span class="tag is-medium has-background-brown has-text-white">Afspraak</span>
+						<span class="tag is-medium has-text-white">Afspraak</span>
 					</header>
 					<div class="timeline-item">
-						<div class="timeline-marker is-dark-blue is-icon">
+						<div class="timeline-marker is-icon">
 							<i class="fa-solid fa-calendar-check"></i>
 						</div>
 						<div class="timeline-content">
@@ -142,7 +168,7 @@
 						</div>
 					</div>
 					<div class="timeline-item">
-						<div class="timeline-marker is-dark-blue is-icon">
+						<div class="timeline-marker is-icon">
 							<i class="fa-solid fa-bell"></i>
 						</div>
 						<div class="timeline-content">
@@ -152,10 +178,10 @@
 						</div>
 					</div>
 					<header class="timeline-header">
-					  <span class="tag is-medium has-background-brown has-text-white">Bezichtiging</span>
+					  <span class="tag is-medium has-text-white">Bezichtiging</span>
 					</header>
 					<div class="timeline-item">
-						<div class="timeline-marker is-dark-blue is-icon">
+						<div class="timeline-marker is-icon">
 							<i class="fa-solid fa-face-smile"></i>
 						</div>
 						<div class="timeline-content">
@@ -165,7 +191,7 @@
 						</div>
 					</div>
 					<div class="timeline-item">
-						<div class="timeline-marker is-dark-blue is-icon">
+						<div class="timeline-marker is-icon">
 						  <i class="fa fa-flag"></i>
 						</div>
 						<div class="timeline-content">
@@ -175,7 +201,7 @@
 						</div>
 					</div>
 					<header class="timeline-header">
-					  <span class="tag is-small has-background-brown has-text-white">Einde</span>
+					  <span class="tag is-small has-text-white">Einde</span>
 					</header>
 				  </div>
 			</div>
@@ -193,11 +219,11 @@
 					</div>
 					<div class="column has-text-centered">
 						<p class="heading"><b>Telefoon</b><br/>06-51592824</p>
-						<p class="title"><a href="tel:+31651592824"><i class="fa-solid fa-phone fa-3x has-text-dark-blue"></i></a></p>
+						<p class="title"><a href="tel:+31651592824"><i class="fa-solid fa-phone fa-3x"></i></a></p>
 					</div>
 					<div class="column has-text-centered">
 						<p class="heading"><b>E-mail</b><br/>thomas@wethnk.nl</p>
-						<p class="title"><a href="mailto:thomas@wethnk.nl"><i class="fa-solid fa-envelope fa-3x has-text-dark-blue"></i></a></p>
+						<p class="title"><a href="mailto:thomas@wethnk.nl"><i class="fa-solid fa-envelope fa-3x"></i></a></p>
 					</div>
 				</div>
 			</div>
@@ -231,6 +257,7 @@
 
 	<script src="https://kit.fontawesome.com/da1b211f85.js" crossorigin="anonymous"></script>
 	<script src="js/bulma-navbar.js"></script>
+	<script src="js/bulma-themes.js"></script>
 </body>
 
 </html>
