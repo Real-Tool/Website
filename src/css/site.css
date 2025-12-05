@@ -1,39 +1,25 @@
 @media (prefers-color-scheme: light) {
 	:root {
-		--navbar-background-color: #F7F7F7;
 		--header-text-color: #A48A7B;
 		--paragraph-text-color: #0C255D;
-		--timeline-marker-background-color: #0C255D;
-		--timeline-marker-text-color: white;
-		--timeline-header-background-color: #A48A7B;
 		--contact-title-text-color: #0C255D;
+		--gray-background-color: #F0F2F4;
 	}
 }
 
 [data-theme=dark], .theme-dark {
-	--navbar-background-color: black;
 	--header-text-color: #F7F7F7;
 	--paragraph-text-color: #A48A7B;
-	--timeline-marker-background-color: #DDE582;
-	--timeline-marker-text-color: black;
-	--timeline-header-background-color: #EB5153;
 	--contact-title-text-color: #F7F7F7;
+	--gray-background-color: #484849;
 }
 
 body {
-	font-family: "Inter", serif;
-}
-
-h4 {
-	color: var(--header-text-color) !important;
+	font-family: "Google Sans Flex", serif;
 }
 
 p, li {
 	color: var(--paragraph-text-color) !important;
-}
-
-.navbar {
-	background-color: var(--navbar-background-color);
 }
 
 .navbar img {
@@ -41,25 +27,15 @@ p, li {
 	max-height: inherit !important;
 }
 
-.hero {
-	background-color: #0C255D;
-}
-
-.hero-body {
-	background-image: url(../img/header.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: right bottom;
-}
-
+/* Mobile styles */
 @media (max-width: 1023px) {
-	.hero-body {
-		background-image: url(../img/header.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: right bottom;
-		background-color: rgba(12, 37, 93, 0.6);
-		background-blend-mode: darken;
+	.p-8, .p-7, .p-6, .navbar {
+		padding: 2rem !important;
+	}
+
+	.px-6 {
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
 	}
 }
 
@@ -75,6 +51,19 @@ p, li {
 	background-color: #A48A7B;
 }
 
+.has-background-gray {
+	background-color: var(--gray-background-color);
+}
+
+.has-background-red {
+	background-color: #EB5153;
+}
+
+.has-background-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .has-text-red {
 	color: #EB5153;
 }
@@ -83,27 +72,44 @@ p, li {
 	color: #0C255D;
 }
 
-.has-text-whatsapp-green{
+.has-text-whatsapp-green {
 	color: #25D366 !important;
 }
 
-.column.is-vcentered {
-	margin-top: auto;
-	margin-bottom: auto;
+.button.is-red {
+	background-color: #EB5153;
+	border-color: #EB5153;
 }
 
-.timeline-marker {
-	background-color: var(--timeline-marker-background-color) !important;
-	border-color: var(--timeline-marker-background-color) !important;
-	color: var(--timeline-marker-text-color);
+.button.is-dark-blue {
+	background-color: #0C255D;
+	border-color: #0C255D;
 }
 
-.timeline-header span {
-	background-color: var(--timeline-header-background-color);
+.has-line-height-1-2 {
+	line-height: 1.2;
 }
 
-.timeline img {
-	max-height: 100px;
+.has-line-height-1-7 {
+	line-height: 1.7;
+}
+
+.p-7 {
+	padding: 4.5rem;
+}
+
+.p-8 {
+	padding: 6rem;
+}
+
+.px-7 {
+	padding-left: 4.5rem;
+	padding-right: 4.5rem;
+}
+
+.px-8 {
+	padding-left: 6rem;
+	padding-right: 6rem;
 }
 
 #contact i {

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+	<title>RealTool - Maakt van je bezichtigers verkopers!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="RealTool" />
+	<meta property="og:description" content="Maakt van je bezichtigers verkopers!" />
+	<meta name="description" content="Maakt van je bezichtigers verkopers!">
+	<meta property="og:image" content="https://www.realtool.nl/img/RealTool.png" />
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/favicon.png">
+
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"></noscript>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"></noscript>
+
+	<link rel="stylesheet" href="css/site.css">
+	<link rel="stylesheet" href="css/whatsapp.css">
+	<link rel="stylesheet" href="css/phone.css">
+</head>
+
+<body>
+	<nav class="navbar px-8 py-4" role="navigation">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<img src="img/logo-horizontal.webp" alt="RealTool" />
+				</a>
+
+				<a role="button" class="navbar-burger" data-target="navbarRealTool">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarRealTool" class="navbar-menu">
+				<div class="navbar-end">
+					<a class="navbar-item is-hidden-mobile" href="https://wa.me/31651592824">
+						<i class="fa-brands fa-whatsapp fa-2x"></i>
+					</a>
+
+					<a class="navbar-item is-hidden-mobile" href="mailto:thomas@wethnk.nl">
+						<i class="fa-duotone fa-envelope fa-2x"></i>
+					</a>
+
+					<div class="navbar-item has-dropdown is-hoverable is-hidden-mobile">
+						<a class="navbar-link is-arrowless">
+							<i class="fa-duotone fa-bars fa-2x"></i>
+						</a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="index.html">
+								<i class="fa-duotone fa-fw fa-home"></i>
+								Home
+							</a>
+
+							<a class="navbar-item" href="index.html#hoe-werkt-het">
+								<i class="fa-duotone fa-fw fa-timeline"></i>
+								Hoe werkt het
+							</a>
+
+							<a class="navbar-item" href="index.html#contact">
+								<i class="fa-duotone fa-fw fa-headset"></i>
+								Contact
+							</a>
+
+							<hr>
+
+							<div class="js-themes">
+								<button data-scheme="system" class="navbar-item">
+									<span class="icon">
+										<i class="fa-duotone fa-fw fa-sun"></i>
+									</span>
+									<span>Light</span>
+								</button>
+								<button data-scheme="dark" class="navbar-item">
+									<span class="icon">
+										<i class="fa-duotone fa-fw fa-moon"></i>
+									</span>
+									<span>Dark</span>
+								</button>
+								<button data-scheme="system" class="navbar-item">
+									<span class="icon">
+										<i class="fa-duotone fa-fw fa-desktop"></i>
+									</span>
+									<span>System</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<a class="navbar-item is-hidden-tablet" href="index.html">
+						<i class="fa-duotone fa-fw fa-home"></i>
+						Home
+					</a>
+
+					<a class="navbar-item is-hidden-tablet" href="index.html#hoe-werkt-het">
+						<i class="fa-duotone fa-fw fa-timeline"></i>
+						Hoe werkt het
+					</a>
+
+					<a class="navbar-item is-hidden-tablet" href="index.html#contact">
+						<i class="fa-duotone fa-fw fa-headset"></i>
+						Contact
+					</a>
+
+					<hr class="is-hidden-tablet">
+
+					<div class="js-themes is-hidden-tablet">
+						<button data-scheme="system" class="navbar-item">
+							<span class="icon">
+								<i class="fa-duotone fa-fw fa-sun"></i>
+							</span>
+							<span>Light</span>
+						</button>
+
+						<button data-scheme="dark" class="navbar-item">
+							<span class="icon">
+								<i class="fa-duotone fa-fw fa-moon"></i>
+							</span>
+							<span>Dark</span>
+						</button>
+
+						<button data-scheme="system" class="navbar-item">
+							<span class="icon">
+								<i class="fa-duotone fa-fw fa-desktop"></i>
+							</span>
+							<span>System</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="columns">
+			<div class="column p-0">
+				<div class="p-6 has-background-gray">
+					<h2 class="is-size-2 has-text-red has-text-weight-bold has-line-height-1-2">Demo aanvragen?</h2>
+					<h4 class="is-size-4 has-text-weight-bold has-line-height-1-2 mb-6">
+						Of andere vragen...
+					</h4>
+					<form action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="access_key" value="1779c506-47de-4824-af5f-64c2f63ace10">
+
+						<div class="field">
+							<label class="label">Bedrijfsnaam</label>
+							<div class="control">
+								<input class="input" type="text" name="bedrijfsnaam" required>
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">Voornaam</label>
+							<div class="control">
+								<input class="input" type="text" name="voornaam" required>
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">Achternaam</label>
+							<div class="control">
+								<input class="input" type="text" name="achternaam" required>
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">E-mail</label>
+							<div class="control">
+								<input class="input" type="email" name="email" required>
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">Telefoon</label>
+							<div class="control">
+								<input class="input" type="text" name="telefoon" required>
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">Vragen</label>
+							<div class="control">
+								<textarea class="textarea" name="vragen"></textarea>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="control">
+								<button class="button is-dark-blue has-text-white">
+									Verzenden
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="columns">
+			<div class="column p-0">
+				<figure class="image is-hidden-mobile">
+					<img src="img/column-image5.webp" />
+				</figure>
+				<div class="has-background-dark-blue p-6">
+					<p class="title has-text-white">Welkom bij RealTool</p>
+					<div class="columns has-text-white">
+						<div class="column">
+							<p><a href="index.html" class="has-text-white">Home</a></p>
+							<p><a href="index.html#hoe-werkt-het" class="has-text-white">Hoe het werkt</a></p>
+							<p><a href="index.html#contact" class="has-text-white">Contact</a></p>
+						</div>
+						<div class="column">
+							<p>
+								<a href="https://wa.me/31651592824" class="has-text-white">
+									<i class="fa-brands fa-whatsapp fa-fw has-text-white"></i>
+									<span>RealTool</span>
+								</a>
+							</p>
+							<p>
+								<a href="tel:+31651592824" class="has-text-white">
+									<i class="fa-duotone fa-phone fa-fw has-text-white"></i>
+									<span>06-51 59 28 24</span>
+								</a>
+							</p>
+							<p>
+								<a href="mailto:thomas@wethnk.nl" class="has-text-white">
+									<i class="fa-duotone fa-envelope fa-fw has-text-white"></i>
+									<span>thomas@wethnk.nl</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="py-3 px-6">
+					RealTool &copy; 2025
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://kit.fontawesome.com/da1b211f85.js" crossorigin="anonymous"></script>
+	<script src="js/bulma-navbar.js"></script>
+	<script src="js/bulma-themes.js"></script>
+</body>
+
+</html>

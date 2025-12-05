@@ -12,27 +12,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Login to Azure
-      uses: azure/login@v1
+      uses: azure/login@v2
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Upload to blob storage
-      uses: azure/CLI@v1
+      uses: azure/CLI@v2
       with:
         inlineScript: |
           az storage blob upload-batch --overwrite --account-name rtpwesa --auth-mode key -d '$web' -s src
 
     - name: Purge CDN endpoint
-      uses: azure/CLI@v1
+      uses: azure/CLI@v2
       with:
         inlineScript: |
           az cdn endpoint purge --content-paths  "/*" --profile-name "rt-p-we-cdn" --name "rt-p-we-cdn-endpoint" --resource-group "rt-p-we-rg"
 
     - name: Logout of Azure
-      uses: azure/CLI@v1
+      uses: azure/CLI@v2
       with:
         inlineScript: |
           az logout

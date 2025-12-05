@@ -8,17 +8,10 @@ const state = {
 	OSTheme: null, // light|dark|null
 };
 
-const $themeCycle = document.getElementById("js-cycle");
 const $themeSwitchers = document.querySelectorAll(".js-themes button");
 const $darkmodes = document.querySelectorAll(".js-darkmode");
 
 const updateThemeUI = () => {
-	if (state.appliedTheme === "light") {
-	  $themeCycle.className = "fa-duotone fa-regular fa-sun";
-	} else {
-	  $themeCycle.className = "fa-duotone fa-regular fa-moon";
-	}
-
 	$themeSwitchers.forEach((el) => {
 	  const swatchTheme = el.dataset.scheme;
 
